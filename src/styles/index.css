@@ -27,7 +27,7 @@ h2 {
 }
 
 .button-primary {
-  @apply text-2xl font-light text-black 
+  @apply text-2xl font-light text-white 
          bg-gradient-to-r from-[#00aaff] to-[#0067dd]
          rounded-lg px-8 py-3 hover:cursor-pointer 
          transform transition-transform duration-300 hover:scale-105;
