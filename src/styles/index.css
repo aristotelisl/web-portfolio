@@ -22,6 +22,10 @@ h2 {
   @apply text-[70px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#93d3f3] via-[#00aaff] to-[#0067dd]
 }
 
+.section-margins {
+  @apply mt-44
+}
+
 .p-base {
     @apply text-lg text-gray-400
 }
@@ -38,6 +42,6 @@ h2 {
 }
 
 .hero-social {
-  @apply w-10 h-10 p-2 bg-gray-800 rounded-lg hover:cursor-pointer
+  @apply text-gray-300 hover:text-[#0067dd] text-3xl
          transform transition-transform duration-300 hover:scale-105;
 }

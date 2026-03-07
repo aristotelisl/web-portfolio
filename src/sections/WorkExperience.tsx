@@ -7,7 +7,7 @@ function WorkExperience() {
       const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <section>
+        <section className='section-margins'>
             <h2>Work Experience</h2>
             <p className="p-base">Professional Experience</p>
 
@@ -117,6 +117,39 @@ function WorkExperience() {
                                 </li>
                                 <li>
                                     Utilised Node.js with Express framework and React with Ant Design UI Kit
+                                </li>
+                            </ul>                
+                        </div>
+                    </div>
+                </div>
+
+                {/* Deloitte */}
+                <div className="flex flex-row space-x-24 text-start">
+                    <div className="text-5xl text-gray-400 font-extrabold ">
+                        Sep <br/>2022 
+                    </div>
+
+                    <div>
+                        <div className='space-y-4'>
+                            <div className='flex flex-row items-center space-x-4'>
+                                <img src={azul} alt="" className='w-10 h-10 rounded-lg' />
+                                <div>
+                                    <p className="text-xl">Cyber Risk, Intern</p>
+                                    <p className="p-base">Deloitte • Limassol, Cyprus</p>
+                                </div>
+                            </div>
+
+                            <p className='p-base'>Something something something</p>
+
+                            <ul className='list-disc'>
+                                <li>
+                                    Trained in cyber threat identification, vulnerability assessment, and penetration testing techniques
+                                </li>
+                                <li>
+                                    Practiced identifying exposed or vulnerable network ports and services using professional recon tools
+                                </li>
+                                <li>
+                                    Learned foundational principles of cyber risk management, including attack surface evaluation and mitigation planning
                                 </li>
                             </ul>                
                         </div>

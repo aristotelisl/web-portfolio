@@ -1,5 +1,6 @@
 import DotGrid from "./components/DotGrid";
 import Navbar from "./components/Navbar";
+import Education from "./sections/Education";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import WorkExperience from "./sections/WorkExperience";
@@ -27,7 +28,7 @@ function App() {
       <Navbar />
       <Hero />
       <WorkExperience/>
-      <Projects/>
+      <Education/>
     </div>
   );
 }
