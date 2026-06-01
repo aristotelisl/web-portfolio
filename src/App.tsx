@@ -7,7 +7,6 @@ import Awards from "./sections/Awards";
 import Contact from "./sections/Contact";
 import Education from "./sections/Education";
 import Hero from "./sections/Hero";
-import Projects from "./sections/Projects";
 import WorkExperience from "./sections/WorkExperience";
 import "./styles/App.css";
 
