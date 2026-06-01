@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  @apply text-[100px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#93d3f3] via-[#00aaff] to-[#0067dd]
+}
+
+h2 {
+  @apply text-[70px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#93d3f3] via-[#00aaff] to-[#0067dd]
+}
+
+.section-margins {
+  @apply mt-44
+}
+
+.p-base {
+    @apply text-lg text-gray-400
+}
+
+.button-primary {
+  @apply text-2xl font-light text-white 
+         bg-gradient-to-r from-[#00aaff] to-[#0067dd]
+         rounded-lg px-8 py-3 hover:cursor-pointer 
+         transform transition-transform duration-300 hover:scale-105;
+}
+
+.button-secondary {
+  @apply text-2xl font-light text-[#00aaff]
+         border border-[#00aaff]/50
+         rounded-lg px-8 py-3 hover:cursor-pointer
+         hover:bg-[#00aaff]/10
+         transform transition-all duration-300 hover:scale-105;
+}
+
+.hero-social {
+  @apply text-gray-300 hover:text-[#0067dd] text-3xl
+         transform transition-transform duration-300 hover:scale-105;
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto px-8;
+}
+
+section {
+  scroll-margin-top: 5rem;
+}

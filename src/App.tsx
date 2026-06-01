@@ -1,35 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import DotGrid from "./components/DotGrid";
+import Navbar from "./components/Navbar";
+import Awards from "./sections/Awards";
+import Contact from "./sections/Contact";
+import Education from "./sections/Education";
+import Hero from "./sections/Hero";
+import Projects from "./sections/Projects";
+import WorkExperience from "./sections/WorkExperience";
+import "./styles/App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const elements = gsap.utils.toArray<Element>('.fade-in-section');
+    elements.forEach((el) => {
+      gsap.fromTo(
+        el,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 85%',
+            toggleActions: 'play none none none',
+          },
+        }
+      );
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+    };
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Background */}
+      <div className="fixed inset-0 -z-10">
+        <DotGrid
+          dotSize={4}
+          gap={20}
+          baseColor="#271e37"
+          activeColor="#00aaff"
+          proximity={100}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      {/* Content */}
+      <Navbar />
+      <Hero />
+      <WorkExperience />
+      <Education />
+      <Awards />
+      <Contact />
+    </div>
+  );
 }
 
-export default App
+export default App;
