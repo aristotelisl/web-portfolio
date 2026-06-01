@@ -1,10 +1,12 @@
 function Projects() {
-
     return (
-        <>
-        <h1>YOOO THESE ARE MY PROJECTS MANN</h1>
-        </>
-    )
+        <section id="projects" className="section-margins fade-in-section">
+            <div className="section-container">
+                <h2>Projects</h2>
+                <p className="p-base">Things I've built</p>
+            </div>
+        </section>
+    );
 }
 
-export default Projects
+export default Projects;

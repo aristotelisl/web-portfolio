@@ -38,10 +38,22 @@ h2 {
 }
 
 .button-secondary {
-  
+  @apply text-2xl font-light text-[#00aaff]
+         border border-[#00aaff]/50
+         rounded-lg px-8 py-3 hover:cursor-pointer
+         hover:bg-[#00aaff]/10
+         transform transition-all duration-300 hover:scale-105;
 }
 
 .hero-social {
   @apply text-gray-300 hover:text-[#0067dd] text-3xl
          transform transition-transform duration-300 hover:scale-105;
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto px-8;
+}
+
+section {
+  scroll-margin-top: 5rem;
 }
