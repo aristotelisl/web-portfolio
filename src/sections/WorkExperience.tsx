@@ -13,11 +13,11 @@ function WorkExperience() {
                 <h2>Work Experience</h2>
                 <p className="p-base">Professional experience</p>
 
-                <div className="flex flex-col items-start mt-44 space-y-24">
+                <div className="flex flex-col items-start mt-12 sm:mt-24 lg:mt-44 space-y-12 sm:space-y-24">
 
                     {/* Aseto */}
-                    <div className="flex flex-row space-x-24 text-start">
-                        <div className="text-5xl text-gray-400 font-extrabold min-w-[200px]">
+                    <div className="flex flex-col sm:flex-row sm:space-x-24 space-y-3 sm:space-y-0 text-start w-full">
+                        <div className="text-3xl sm:text-5xl text-gray-400 font-extrabold sm:min-w-[200px]">
                             Oct 2024 -<br />Sep 2025
                         </div>
                         <div className='space-y-4'>
@@ -50,8 +50,8 @@ function WorkExperience() {
                                 <li>Managed and optimised PostgreSQL databases, performing data cleanup and schema improvements to enhance system performance</li>
                             </ul>
 
-                            <div className='flex flex-row items-center space-x-12'>
-                                <p className='p-base max-w-[400px]'>
+                            <div className='flex flex-col sm:flex-row sm:items-center sm:space-x-12 space-y-6 sm:space-y-0'>
+                                <p className='p-base sm:max-w-[400px]'>
                                     This is the Workflow Designer dashboard I developed — a visual interface that enables clients to easily
                                     build and customise their own AI agents. Using an intuitive drag-and-drop editor, users can create and
                                     connect conversation and tool nodes to design unique workflows tailored to their needs. The platform also
@@ -61,7 +61,7 @@ function WorkExperience() {
                                 <img
                                     src={AsetoDesigner}
                                     alt="Aseto Workflow Designer"
-                                    className="rounded-2xl cursor-pointer transition-transform duration-300 w-[50%] hover:scale-105"
+                                    className="rounded-2xl cursor-pointer transition-transform duration-300 w-full sm:w-[50%] hover:scale-105"
                                     onClick={() => setIsOpen(true)}
                                 />
 
@@ -82,8 +82,8 @@ function WorkExperience() {
                     </div>
 
                     {/* Azul */}
-                    <div className="flex flex-row space-x-24 text-start">
-                        <div className="text-5xl text-gray-400 font-extrabold min-w-[200px]">
+                    <div className="flex flex-col sm:flex-row sm:space-x-24 space-y-3 sm:space-y-0 text-start w-full">
+                        <div className="text-3xl sm:text-5xl text-gray-400 font-extrabold sm:min-w-[200px]">
                             Jul 2023 -<br />Sep 2023
                         </div>
                         <div className='space-y-4'>
@@ -106,8 +106,8 @@ function WorkExperience() {
                     </div>
 
                     {/* Deloitte */}
-                    <div className="flex flex-row space-x-24 text-start">
-                        <div className="text-5xl text-gray-400 font-extrabold min-w-[200px]">
+                    <div className="flex flex-col sm:flex-row sm:space-x-24 space-y-3 sm:space-y-0 text-start w-full">
+                        <div className="text-3xl sm:text-5xl text-gray-400 font-extrabold sm:min-w-[200px]">
                             Sep<br />2022
                         </div>
                         <div className='space-y-4'>

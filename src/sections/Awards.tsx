@@ -41,10 +41,10 @@ function Awards() {
                 <h2>Awards</h2>
                 <p className="p-base">Competitions & recognition</p>
 
-                <div className="flex flex-col items-start mt-44 space-y-24">
+                <div className="flex flex-col items-start mt-12 sm:mt-24 lg:mt-44 space-y-12 sm:space-y-24">
                     {awards.map((award, index) => (
-                        <div key={index} className="flex flex-row space-x-24 text-start">
-                            <div className="text-5xl text-gray-400 font-extrabold min-w-[120px] whitespace-pre-line">
+                        <div key={index} className="flex flex-col sm:flex-row sm:space-x-24 space-y-3 sm:space-y-0 text-start w-full">
+                            <div className="text-3xl sm:text-5xl text-gray-400 font-extrabold sm:min-w-[120px] whitespace-pre-line">
                                 {award.date}
                             </div>
                             <div className="space-y-4">

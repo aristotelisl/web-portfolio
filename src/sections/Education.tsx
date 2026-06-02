@@ -8,7 +8,7 @@ function Education() {
                 <h2>Education</h2>
                 <p className="p-base">Academic background</p>
 
-                <div className='space-y-24 flex flex-col items-start mt-44'>
+                <div className='space-y-12 sm:space-y-24 flex flex-col items-start mt-12 sm:mt-24 lg:mt-44'>
 
                     {/* University of Bath */}
                     <div className='flex flex-col items-start space-y-8'>

@@ -8,18 +8,18 @@ function Hero() {
     const [cvOpen, setCvOpen] = useState(false);
 
     return (
-        <section id="hero" className="h-screen flex flex-col items-center justify-center fade-in-section">
-            <h1>
+        <section id="hero" className="h-screen flex flex-col items-center justify-center fade-in-section px-4">
+            <h1 className="text-center">
                 Aristotelis Loucaides
             </h1>
             <div className="text-white font-semibold border border-sky-500/40
-            bg-black/40 rounded-xl px-8 py-6 mb-4
-            shadow-[0_0_20px_rgba(56,189,248,0.4)] text-center text-5xl">
+            bg-black/40 rounded-xl px-4 sm:px-8 py-4 sm:py-6 mb-4
+            shadow-[0_0_20px_rgba(56,189,248,0.4)] text-center text-2xl sm:text-4xl md:text-5xl">
                 Software Engineer
             </div>
-            <p className='p-base'>Building robust systems and intelligent software that scale.</p>
+            <p className='p-base text-center'>Building robust systems and intelligent software that scale.</p>
 
-            <div className="flex flex-row mt-12 space-x-4 items-center">
+            <div className="flex flex-row mt-8 sm:mt-12 space-x-4 items-center flex-wrap justify-center gap-y-3">
                 <button
                     className='button-primary'
                     onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
