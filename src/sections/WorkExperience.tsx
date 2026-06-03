@@ -32,7 +32,9 @@ function WorkExperience() {
                             <p className='p-base'>Built AI voice agents and the company's full operations platform from the ground up.</p>
 
                             <ul className='list-disc space-y-1'>
-                                <li>Engineered backend logic for Aseto's AI Voice Agent, automating inbound and outbound communication with Python ML frameworks such as LlamaIndex</li>
+                                <li>Designed and implemented agentic AI workflows and RAG pipelines for Aseto's AI Voice Agent, with multistep reasoning and retrieval using LlamaIndex</li>
+                                <li>Trained and fine-tuned ML models for integration into the conversational AI pipeline, improving response accuracy and task-specific performance</li>
+                                <li>Engineered backend logic automating inbound and outbound communication, integrating the agent with telephony systems and real-time data sources</li>
                                 <li>Designed and maintained modular Python microservices, including a Text-to-Speech service critical to the conversational AI pipeline</li>
                                 <li>
                                     Built and launched the company's{" "}
@@ -47,7 +49,6 @@ function WorkExperience() {
                                     using Next.js, ensuring scalability, responsiveness, and high performance across devices
                                 </li>
                                 <li>Developed and integrated robust APIs in ASP.NET, enabling communication across services and supporting key features of the AI assistant</li>
-                                <li>Managed and optimised PostgreSQL databases, performing data cleanup and schema improvements to enhance system performance</li>
                             </ul>
 
                             <div className='flex flex-col sm:flex-row sm:items-center sm:space-x-12 space-y-6 sm:space-y-0'>
@@ -98,33 +99,8 @@ function WorkExperience() {
                             <p className='p-base'>Developed internal developer tooling for Java grammar visualisation and analysis.</p>
 
                             <ul className='list-disc space-y-1'>
-                                <li>Worked with a team to create a Java grammar visualizer web application for internal use within the company</li>
-                                <li>Implemented features such as syntax highlighting, search functionality, and directed acyclic graphs to visually represent complex relationships between hundreds of grammar files</li>
-                                <li>Utilised Node.js with Express framework and React with Ant Design UI Kit</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* Deloitte */}
-                    <div className="flex flex-col sm:flex-row sm:space-x-24 space-y-3 sm:space-y-0 text-start w-full">
-                        <div className="text-3xl sm:text-5xl text-gray-400 font-extrabold sm:min-w-[200px]">
-                            Sep<br />2022
-                        </div>
-                        <div className='space-y-4'>
-                            <div className='flex flex-row items-center space-x-4'>
-                                <img src={azul} alt="Deloitte" className='w-10 h-10 rounded-lg' />
-                                <div>
-                                    <p className="text-xl">Cyber Risk, Intern</p>
-                                    <p className="p-base">Deloitte · Limassol, Cyprus</p>
-                                </div>
-                            </div>
-
-                            <p className='p-base'>Completed a hands-on cyber risk internship covering threat identification and penetration testing fundamentals.</p>
-
-                            <ul className='list-disc space-y-1'>
-                                <li>Trained in cyber threat identification, vulnerability assessment, and penetration testing techniques</li>
-                                <li>Practiced identifying exposed or vulnerable network ports and services using professional recon tools</li>
-                                <li>Learned foundational principles of cyber risk management, including attack surface evaluation and mitigation planning</li>
+                                <li>Developed a Java grammar visualiser web application, enabling engineers to navigate and understand complex relationships across hundreds of grammar files</li>
+                                <li>Implemented syntax highlighting, search functionality, and directed acyclic graph visualisations to represent hierarchical grammar dependencies</li>
                             </ul>
                         </div>
                     </div>
