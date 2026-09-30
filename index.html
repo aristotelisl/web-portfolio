@@ -2,13 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Profile.jpg" />
+    <link rel="icon" type="image/jpeg" href="/Profile.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#121212" />
-    <title>Aristotelis Loucaides - Web Developer & Software Engineer</title>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fafaf7" />
+    <meta
+      name="description"
+      content="Aristotelis Loucaides — software engineer working on agentic AI, LLM pipelines and the web."
+    />
+    <title>Aristotelis Loucaides — Software Engineer</title>
+    <!-- Apply the saved theme before first paint so dark mode never flashes light -->
+    <script>
+      try {
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.dataset.theme = 'dark';
+          document.querySelector('meta[name="theme-color"]').content = '#141413';
+        }
+      } catch (e) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+Condensed:wght@700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
