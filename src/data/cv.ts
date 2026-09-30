@@ -238,21 +238,6 @@ export const glance = [
   { value: '4', label: 'competition podiums' },
 ];
 
-// Figure 1: the stack drawn as an IC. Clicking a pin applies its skill filter.
-export const pinsLeft: { n: number; label: string; skill: Skill }[] = [
-  { n: 1, label: 'Python', skill: 'Python' },
-  { n: 2, label: 'JavaScript', skill: 'JavaScript' },
-  { n: 3, label: 'C#', skill: 'C# / ASP.NET' },
-  { n: 4, label: 'Java', skill: 'Java' },
-];
-
-export const pinsRight: { n: number; label: string; skill: Skill }[] = [
-  { n: 8, label: 'LlamaIndex', skill: 'RAG / LLMs' },
-  { n: 7, label: 'Next.js', skill: 'Next.js' },
-  { n: 6, label: 'ASP.NET', skill: 'C# / ASP.NET' },
-  { n: 5, label: 'C++', skill: 'C++' },
-];
-
 export const skillGroups = [
   { title: 'Languages', items: ['Python', 'JavaScript', 'C#', 'Java', 'C++'] },
   { title: 'AI & LLM engineering', items: ['Agentic workflows', 'RAG', 'Prompt engineering', 'LLM integration'] },

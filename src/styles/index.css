@@ -29,7 +29,6 @@
   --rule: #cfcdc6;
   --line: #dad8d1;
   --chip: #b9b7b0;
-  --chip-body: #1c1c1b;
   --accent: #f2a33a;
   --accent-tint: #f2a33a33;
   color-scheme: light;
@@ -44,7 +43,6 @@
   --rule: #3a3935;
   --line: #2c2b29;
   --chip: #55534e;
-  --chip-body: #0b0b0a;
   --accent: #f2a33a;
   --accent-tint: #f2a33a2e;
   color-scheme: dark;

@@ -113,7 +113,7 @@ function App() {
             })}
           </div>
 
-          <Sidebar skill={skill} onSkill={changeSkill} />
+          <Sidebar />
         </div>
       </main>
 
