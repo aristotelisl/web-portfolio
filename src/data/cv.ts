@@ -159,15 +159,15 @@ export const entries: Entry[] = [
     title: '1st Place - ESBF Innovation Competition',
     org: 'University of Bath',
     place: '£3,000 prize',
-    summary: "Won with 99NOW, a pitch to modernise the UK's 999 system with live video and AI-assisted risk assessment.",
+    summary: "Won by pitching 99NOW, a concept for modernising the UK's 999 system with live video and AI-assisted risk assessment.",
     bullets: [
       {
         text: 'Awarded 1st place and £3,000 in the Engineers and Scientists in Business Fellowship (ESBF) Innovation Competition, part of the Entrepreneurship module',
         skills: ['Product'],
       },
       {
-        text: 'Co-created and pitched 99NOW, a next-generation emergency communication platform proposing live video, digital reporting and AI-assisted risk assessment for 999',
-        skills: ['Product', 'RAG / LLMs'],
+        text: 'Collaborated with a team to conceive and pitch 99NOW, a concept for a next-generation emergency communication platform proposing to modernise the 999 system with live video, digital reporting and AI-assisted risk assessment',
+        skills: ['Product'],
       },
     ],
   },
