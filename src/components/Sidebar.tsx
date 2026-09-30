@@ -65,7 +65,6 @@ function Sidebar({ skill, onSkill }: Props) {
           <div className="relative flex h-58 w-22 items-center justify-center bg-[var(--chip-body)] sm:w-26">
             <span className="absolute -top-px left-1/2 h-4 w-8 -translate-x-1/2 rounded-b-full bg-paper" />
             <span className="absolute top-6 left-3 size-2.5 rounded-full bg-[#3a3a38]" />
-            <span className="-rotate-90 font-mono text-xl font-semibold tracking-widest text-[#fafaf7]">AL-01</span>
           </div>
           <div className="flex flex-col gap-4">
             {pinsRight.map((p) => (

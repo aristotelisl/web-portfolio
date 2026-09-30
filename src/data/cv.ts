@@ -8,7 +8,6 @@ export type Skill =
   | 'C# / ASP.NET'
   | 'C++'
   | 'Next.js'
-  | 'PostgreSQL'
   | 'RAG / LLMs'
   | 'Agentic AI'
   | 'ML'
@@ -26,7 +25,6 @@ export const skillFilters: Skill[] = [
   'C# / ASP.NET',
   'C++',
   'Next.js',
-  'PostgreSQL',
   'RAG / LLMs',
   'Agentic AI',
   'ML',
@@ -83,7 +81,7 @@ export const entries: Entry[] = [
         skills: ['Backend', 'Python'],
       },
       {
-        text: 'Designed and maintained modular Python microservices, including a Text-to-Speech service critical to the conversational AI pipeline',
+        text: 'Designed and maintained modular Python microservices',
         skills: ['Python', 'Backend'],
       },
       {
@@ -94,10 +92,6 @@ export const entries: Entry[] = [
       {
         text: 'Developed and integrated robust APIs in ASP.NET, enabling communication across services and supporting key features of the AI assistant',
         skills: ['C# / ASP.NET', 'Backend'],
-      },
-      {
-        text: 'Managed and optimised PostgreSQL databases, performing data cleanup and schema improvements to enhance system performance',
-        skills: ['PostgreSQL', 'Backend'],
       },
     ],
   },
@@ -123,7 +117,7 @@ export const entries: Entry[] = [
   {
     id: 'bath',
     section: 'Education',
-    dates: '10/2025 — Present',
+    dates: '10/2025 — 09/2026',
     title: 'MSc Computer Science',
     org: 'University of Bath',
     place: 'Bath, England',
@@ -217,7 +211,7 @@ export const entries: Entry[] = [
   },
 ];
 
-// Timeline bars, in months since Oct 2021. `b: null` means ongoing.
+// Timeline bars, in months since Oct 2021 (end-exclusive). `b: null` means ongoing.
 export interface Segment {
   id: string;
   label: string;
@@ -231,10 +225,10 @@ export const TIMELINE_START = { year: 2021, month: 10 };
 
 export const segments: Segment[] = [
   { id: 'soton', label: 'BSc · Southampton', short: 'BSc', a: 0, b: 33, lane: 0 },
-  { id: 'bath', label: 'MSc · Bath', short: 'MSc', a: 48, b: null, lane: 0 },
+  { id: 'bath', label: 'MSc · Bath', short: 'MSc', a: 48, b: 60, lane: 0 },
   { id: 'azul', label: 'Azul', short: 'Azul', a: 21, b: 24, lane: 1 },
   { id: 'aseto', label: 'Aseto · Software Developer', short: 'Aseto', a: 36, b: 48, lane: 1 },
-  { id: 'esbf', label: 'ESBF 1st', short: 'ESBF', a: 55, b: 60, lane: 2 },
+  { id: 'esbf', label: 'ESBF 1st', short: 'ESBF', a: 55, b: 56, lane: 2 },
 ];
 
 export const glance = [
@@ -256,14 +250,14 @@ export const pinsRight: { n: number; label: string; skill: Skill }[] = [
   { n: 8, label: 'LlamaIndex', skill: 'RAG / LLMs' },
   { n: 7, label: 'Next.js', skill: 'Next.js' },
   { n: 6, label: 'ASP.NET', skill: 'C# / ASP.NET' },
-  { n: 5, label: 'PostgreSQL', skill: 'PostgreSQL' },
+  { n: 5, label: 'C++', skill: 'C++' },
 ];
 
 export const skillGroups = [
   { title: 'Languages', items: ['Python', 'JavaScript', 'C#', 'Java', 'C++'] },
-  { title: 'AI & LLM engineering', items: ['Agentic workflows', 'RAG', 'LLM integration', 'Model fine-tuning'] },
-  { title: 'Frameworks', items: ['ASP.NET', 'Next.js', 'Express.js', 'LlamaIndex'] },
-  { title: 'Tools', items: ['Git', 'Docker', 'PostgreSQL', 'Microsoft Azure'] },
+  { title: 'AI & LLM engineering', items: ['Agentic workflows', 'RAG', 'Prompt engineering', 'LLM integration'] },
+  { title: 'Frameworks', items: ['ASP.NET', 'Next.js', 'Vite', 'Express.js', 'FastAPI', 'Flask', 'LlamaIndex'] },
+  { title: 'Tools', items: ['Docker', 'Git', 'PostgreSQL', 'Linux', 'Microsoft Azure'] },
 ];
 
 export const contact = {

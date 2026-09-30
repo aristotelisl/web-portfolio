@@ -50,9 +50,6 @@ function Header({ theme, onToggleTheme }: Props) {
         </div>
 
         <div className="flex flex-col gap-1.5 font-mono text-[14px] lg:items-end lg:text-right">
-          <span className="mb-2 self-start bg-accent px-3 py-1.5 text-[12px] font-semibold tracking-[0.08em] text-on-accent lg:self-end">
-            AL-01 · SOFTWARE ENGINEER
-          </span>
           <a href={`mailto:${contact.email}`} className="no-underline hover:text-accent">
             {contact.email}
           </a>
@@ -72,7 +69,7 @@ function Header({ theme, onToggleTheme }: Props) {
           >
             github.com/{contact.github} ↗
           </a>
-          <span className="text-muted">Bath, England · UK Pre-Settled Status</span>
+          <span className="text-muted">Right to work: UK (Pre-Settled Status)</span>
           <div className="mt-2.5 flex gap-2 lg:justify-end">
             <a
               href={contact.cv}

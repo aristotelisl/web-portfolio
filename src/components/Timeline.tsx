@@ -58,7 +58,11 @@ function Timeline({ selected, dimmed, onSelect }: Props) {
                 title={s.label}
                 aria-pressed={active}
                 onClick={() => onSelect(s.id)}
-                style={{ left: pct(s.a), width: `calc(${pct(end - s.a)} - 2px)`, top: 16 + s.lane * 48 }}
+                style={
+                  s.lane === 2
+                    ? { right: `calc(100% - ${pct(end)})`, top: 16 + s.lane * 48 }
+                    : { left: pct(s.a), width: `calc(${pct(end - s.a)} - 2px)`, top: 16 + s.lane * 48 }
+                }
                 className={`absolute h-8 min-w-11 overflow-hidden border-2 border-ink px-2 text-left text-[13px] font-semibold whitespace-nowrap transition-opacity ${
                   active
                     ? 'bg-accent text-on-accent'
