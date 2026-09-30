@@ -12,9 +12,20 @@ function monthsSinceStart(date: Date) {
   return (date.getFullYear() - TIMELINE_START.year) * 12 + (date.getMonth() + 1 - TIMELINE_START.month);
 }
 
+// Where the NOW marker sits: part-way through the current month, but always
+// clear of anything that ends this month or earlier, since those are finished.
+function nowPosition() {
+  const today = new Date();
+  const month = monthsSinceStart(today);
+  const daysInMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate();
+  const exact = month + (today.getDate() - 1) / daysInMonth;
+  const finished = segments.flatMap((s) => (s.b !== null && s.b <= month + 1 ? [s.b] : []));
+  return Math.max(exact, ...finished.map((b) => b + 0.5));
+}
+
 function Timeline({ selected, dimmed, onSelect }: Props) {
-  const now = monthsSinceStart(new Date());
-  const span = Math.max(60, now + 2);
+  const now = nowPosition();
+  const span = Math.max(60, Math.ceil(now) + 2);
   const pct = (m: number) => `${(m / span) * 100}%`;
 
   const years: number[] = [];

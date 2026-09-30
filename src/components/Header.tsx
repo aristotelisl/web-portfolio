@@ -39,13 +39,13 @@ function Header({ theme, onToggleTheme }: Props) {
       <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between lg:gap-12">
         <div className="flex flex-col gap-2.5">
           <span className="font-mono text-[12px] text-muted sm:text-[13px]">
-            CURRICULUM VITAE — INTERACTIVE EDITION · {new Date().getFullYear()}
+            CURRICULUM VITAE - INTERACTIVE EDITION · {new Date().getFullYear()}
           </span>
           <h1 className="m-0 font-condensed text-[56px] font-bold leading-[0.88] tracking-[-0.03em] sm:text-[88px] xl:text-[112px]">
             Aristotelis Loucaides
           </h1>
           <p className="m-0 text-xl font-medium sm:text-[26px]">
-            Software engineer — agentic AI, LLM pipelines and the web.
+            Software engineer - agentic AI, LLM pipelines and the web.
           </p>
         </div>
 

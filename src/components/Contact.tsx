@@ -14,7 +14,7 @@ function Contact() {
     <footer className="flex flex-col gap-3.5">
       <section id="contact" aria-labelledby="contact-title" className="flex flex-col gap-3.5">
         <h2 id="contact-title" className="m-0 text-[22px] font-bold">
-          <span className="text-muted">4</span>&nbsp; Ordering Information — Contact
+          <span className="text-muted">4</span>&nbsp; Ordering Information - Contact
         </h2>
         <div className="grid border-y-2 border-ink sm:grid-cols-2 lg:grid-cols-4">
           {cells.map((c) => (

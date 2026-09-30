@@ -60,7 +60,7 @@ export const entries: Entry[] = [
   {
     id: 'aseto',
     section: 'Experience',
-    dates: '10/2024 — 09/2025',
+    dates: '10/2024 - 09/2025',
     title: 'Software Developer',
     org: 'Aseto',
     place: 'Larnaca, Cyprus',
@@ -85,7 +85,7 @@ export const entries: Entry[] = [
         skills: ['Python', 'Backend'],
       },
       {
-        text: "Built and launched the company's {link} using Next.js — scalable, responsive and fast across devices",
+        text: "Built and launched the company's {link} using Next.js - scalable, responsive and fast across devices",
         link: { label: 'marketing and operations platform', href: 'https://www.aseto.ai' },
         skills: ['Next.js', 'JavaScript', 'Web'],
       },
@@ -98,7 +98,7 @@ export const entries: Entry[] = [
   {
     id: 'azul',
     section: 'Experience',
-    dates: '07/2023 — 09/2023',
+    dates: '07/2023 - 09/2023',
     title: 'Junior Software Engineer, Intern',
     org: 'Azul Systems',
     place: 'Limassol, Cyprus',
@@ -117,11 +117,11 @@ export const entries: Entry[] = [
   {
     id: 'bath',
     section: 'Education',
-    dates: '10/2025 — 09/2026',
+    dates: '10/2025 - 09/2026',
     title: 'MSc Computer Science',
     org: 'University of Bath',
     place: 'Bath, England',
-    summary: 'Dissertation on AI-generated, interactive causal loop diagrams — an industry project with DAS.',
+    summary: 'Dissertation on AI-generated, interactive causal loop diagrams - an industry project with DAS.',
     bullets: [
       {
         text: 'Dissertation: AI-Assisted Generation and Interactive Exploration of Causal Loop Diagrams from Future Scenario Narratives (industry project with DAS)',
@@ -136,7 +136,7 @@ export const entries: Entry[] = [
   {
     id: 'soton',
     section: 'Education',
-    dates: '10/2021 — 06/2024',
+    dates: '10/2021 - 06/2024',
     title: 'BSc (Hons) Computer Science',
     org: 'University of Southampton',
     place: 'Southampton, England',
@@ -156,7 +156,7 @@ export const entries: Entry[] = [
     id: 'esbf',
     section: 'Awards',
     dates: '05/2026',
-    title: '1st Place — ESBF Innovation Competition',
+    title: '1st Place - ESBF Innovation Competition',
     org: 'University of Bath',
     place: '£3,000 prize',
     summary: "Won with 99NOW, a pitch to modernise the UK's 999 system with live video and AI-assisted risk assessment.",
@@ -175,7 +175,7 @@ export const entries: Entry[] = [
     id: 'robotex-intl',
     section: 'Awards',
     dates: '11/2019',
-    title: '3rd Place — Robotex International',
+    title: '3rd Place - Robotex International',
     org: 'Enhanced Line Following',
     place: 'Tallinn, Estonia',
     summary: 'Custom Arduino robot in C++ with a five-sensor PID controller.',
@@ -194,7 +194,7 @@ export const entries: Entry[] = [
     id: 'robotex-cy',
     section: 'Awards',
     dates: '06/2018',
-    title: '1st & 2nd Place — Robotex Cyprus',
+    title: '1st & 2nd Place - Robotex Cyprus',
     org: 'Engino Line Following & Lego Sumo',
     place: 'Nicosia, Cyprus',
     summary: '1st in Engino Line Following, 2nd in Lego Sumo.',

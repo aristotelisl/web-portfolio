@@ -25,7 +25,7 @@ function WorkflowFigure() {
         <img src={workflowDesigner} alt={alt} className="block w-full transition-opacity group-hover:opacity-90" />
       </button>
       <figcaption className="text-[15px] leading-normal text-muted">
-        <b className="text-ink">Workflow Designer</b> — a visual, drag-and-drop editor I built so clients can
+        <b className="text-ink">Workflow Designer</b> - a visual, drag-and-drop editor I built so clients can
         design their own AI agents by connecting conversation and tool nodes, using built-in or custom tools.
       </figcaption>
 

@@ -66,7 +66,7 @@ function App() {
 
   const matchCount = items.filter((i) => i.matches).length;
   const status = skill
-    ? `${skill} — used in ${matchCount} of ${items.length} entries (highlighted)`
+    ? `${skill} - used in ${matchCount} of ${items.length} entries (highlighted)`
     : mode === 'full'
       ? 'Showing everything'
       : 'Showing one-line summaries';
